@@ -21,7 +21,8 @@ module.exports = {
       },
       items: [
         {
-          type: 'localeDropdown',
+          href: "https://windmetaverse-doc-en.4everland.app/",
+          label: "English",
           position: 'right',
         },
        
@@ -71,28 +72,9 @@ module.exports = {
         docs: {
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          editUrl:
-            "https://github.com/biveivk/windmetaverse-docs/",
         },
       },
     ],
   ],
-  plugins: [
-    [
-      'docusaurus-plugin-typedoc',
-      // Plugin / TypeDoc options
-      {
-        entryPoints: ['../windmetaverse-ts/packages/psy-american/src/index.ts'],
-        tsconfig: '../windmetaverse-ts/packages/psy-american/tsconfig.json',
-        // Plugin options
-        out: 'javascript-api',
-        sidebar: {
-          categoryLabel: 'JavascriptApi',
-          position: 0,
-          fullNames: true
-        },
-      },
-    ],
-  ],
+  
 };
